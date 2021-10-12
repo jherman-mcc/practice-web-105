@@ -1,0 +1,70 @@
+body{
+    background-color: white;
+    color: blue;
+    font-size: large;
+    line-height: 2;
+}
+
+/* The container is a class */
+
+.container{
+    width: 80%;
+    margin: 20px auto;
+    border: 3px solid blue;
+    overflow: auto;
+    padding: 15px;
+    min-height: 150px;
+}
+
+h1{
+    font-family: sans-serif;
+    color: blue;
+    font-weight:850;
+    text-align: center;
+
+}
+
+h2{
+    text-align: center;
+}
+
+
+
+
+nav{
+    text-align:center;
+}
+    
+nav a{
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+
+#local {
+    text-align: center;
+    line-height: 3;
+}
+
+#local a {
+   background-color: blue;
+   font-size: 20px;
+   font-weight:700;
+   text-decoration:none;
+   padding: 5px 8px;
+   border:2px solid blue;
+   border-radius: 10px;
+   margin-left:10px;
+}
+
+#local a:hover{
+    color: darkslateblue;
+    background-color:cornflowerblue;
+}
+

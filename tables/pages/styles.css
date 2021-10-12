@@ -1,0 +1,87 @@
+*{
+    overflow: auto;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background: white;
+    color: #181515;
+    box-sizing: border-box;
+    
+}
+.container{
+    background: #ffffcf;
+    width: 80%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    color: #00867d;
+}
+
+h2{
+    font-family: 'Coda', cursive;
+    color: #4db6ac;
+    
+}
+
+nav{
+    text-align: center;
+    line-height: 3;
+}
+
+nav a, .button{
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: #ffffcf;
+    background:#00867d;
+    border: 2px solid #00867d;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+nav a:hover, .button:hover{
+    color: #00867d;
+    background: #ffffcf;
+    
+}
+
+nav a: visited; .button:visited{
+    background: #4db6ac;
+    border: #4db6ac;
+}
+img{
+    padding: 10px;
+    background: #82e9de;
+}
+#sheep{
+    width: 30%;
+    
+    float: right;
+}
+aside{
+    clear: both;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    overflow: auto;
+    border: 2px solid #82e9de;
+    margin-right: 10px;
+}
+
+header, footer{
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+main{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
