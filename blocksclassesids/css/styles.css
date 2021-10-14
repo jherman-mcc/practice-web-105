@@ -1,0 +1,94 @@
+body{
+    background-color: white;
+    color: blue;
+    font-size: large;
+    line-height: 2;
+}
+
+/* The container is a class */
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+    border: 3px solid rgb(255, 135, 113);
+    overflow: auto;
+    padding: 20px;
+    min-height: 150px;
+    background-color: hsla(240,100%,50%, 0.01);
+    background-blend-mode:hue;
+}
+
+#NatureofTime{
+    background-color: hsla(0,100%,50%, 0.03); 
+}
+
+#Einstein{
+    background-color: hsla(240,100%,50%, 0.1);
+
+}
+
+#B-relations{
+   background-color: hsla(0,100%,50%, 0.03); 
+ }
+
+ .Conclusion{
+     background-color: rgb(255, 135, 113);
+     color:white;
+     font-family: sans-serif;
+ }
+
+h1{
+    font-family: sans-serif;
+    color:rgb(2, 138, 216);
+    font-weight:850;
+    text-align: left;
+    padding: 10px;
+
+}
+
+h2,h3{
+    text-align:left;
+}
+
+p{
+    text-align:left;
+}
+
+
+nav{
+    text-align:left;
+}
+    
+nav a{
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+
+#local {
+    text-align: left;
+    line-height: 3;
+}
+
+#local a {
+   background-color: blue;
+   font-size: 20px;
+   font-weight:700;
+   text-decoration:none;
+   padding: 5px 8px;
+   border:2px solid blue;
+   border-radius: 10px;
+   margin-left:5px;
+}
+
+#local a:hover{
+    color: darkslateblue;
+    background-color:cornflowerblue;
+}
+
