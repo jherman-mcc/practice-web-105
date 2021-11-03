@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, var,
+b, u, i, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    top: 0px;
+    left: 0px;
+ 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+    top: 0px;
+    left: 0px;
+}
+
+/* Color Theme Swatches in Hex 
+.My-Color-Blind-Safe-Theme-1-hex { color: #0D00A1; }
+.My-Color-Blind-Safe-Theme-2-hex { color: #080061; }
+.My-Color-Blind-Safe-Theme-3-hex { color: #1300E0; }
+.My-Color-Blind-Safe-Theme-4-hex { color: #1400ED; }
+.My-Color-Blind-Safe-Theme-5-hex { color: #1100C7; }
+*/
+
+
+
+/* --------------------  Variables ------------ */
+
+
+
+
+
+
+
+:root{
+--text-color: #4b0082;
+--h2-text-color: #4b0082;
+--text-headings: #dfdeee;
+--text-white: #F3F3F5;
+--text-shadow: rgb(56, 55, 55); 
+--outer-border-color: #080061;
+--inner-border-color: #0D00A1;
+--column-background: #1400ED;
+--border: #1100C7;
+--everything-else: #0D00A1;
+--mix-one: #F3F3F5;
+--mix-two: var(--everything-else); 
+}
+
+
+
+
+
+
+/* -------------------- layout ------------- */
+
+body {    
+    background: var(mix-one);
+    position: 0px;
+    background: linear-gradient(0deg, var(--mix-one) 0%, var(--mix-two));
+    color: var(--text-color);
+    font-size: 1.8em;
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 1.5;
+/*     border: 10px solid var(--outer-border-color); */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+main {
+    float:left;
+}
+
+head{
+    display: inline-block;
+    margin: 0px;
+    /* float: right; */
+    text-align: center;
+    background-color: var(--inner-border-color);
+    padding: 2%;
+    font-size: 35px;
+    color: var(--text-color);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+    border: 3px solid var(--text-color);
+    padding: 0px;
+    min-height: 10px;
+    background-color: var(--text-color);
+    overflow: auto;
+}
+
+nav {
+    display:block;
+    text-align: left;
+    top: 0;
+    left: 0px;
+    position: fixed;
+    float: left;
+    width: 10.5%;
+    text-anchor: start;
+    background: var(--outer-border-color);
+    color: var(--text-white);
+    padding: none;    
+}
+
+nav a{
+    color: var(--text-white);
+    background-color: var(--outer-border-color);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 0px;
+    text-decoration: var(--text-color); 
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5em;
+    font-family: 'Anton', sans-serif;
+    -webkit-box-shadow: 10px 10px 10px 10px rgba(8, 0, 97, 1);
+     box-shadow: 10px 10px 10px 10px var(--text-shadow);
+     color: var(--text-headings);
+     text-align: left;
+     text-shadow: 30px 20px 10px var(--text-shadow)
+
+}
+
+h2, h3 {
+    font-family: 'Barlow Condensed', sans-serif; 
+    color: var(--text-white);
+    font-weight: 1200;
+    text-align: left;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.8em;
+}
+
+
+p{
+    text-align:left;
+    padding: 10px;
+    margin : 0;
+    padding: .5em;
+    font-size: 90%;
+    color: var(--text-white);
+}
+
+
+
+img{
+    max-width: 100%;
+    max-height: 20%;
+    display:block; 
+    margin:0px auto;
+    padding:0px;
+    background-color:var(text-white);
+    top: 0px;
+    left: 0px;
+        
+}
+
+horizontal-menu{
+    display: inline;
+    margin-left:0px;
+}
+
+horizontal-menu a{
+    text-decoration: none;
+}
+
+#local {
+    text-align: center;
+    line-height: 3;
+}
+
+a:link {
+    color: none;
+}
+
+#local a {
+   background-color: var(--outer-border-color);
+   font-size: 30px;
+   font-weight:1100;
+   text-decoration:none;
+   padding: 5px 8px;
+   border:2px solid var(--border-color);
+   border-radius: 10px;
+   margin-left:0px;
+   
+}
+
+#local a:hover{
+    color: var(--text-white); 
+    background-color: var(--column-background); 
+    margin:0px;
+}
+
+.top-link{
+    color: yellow;
+    outline: 5px groove var(--text-shadow);
+    outline-offset: 5px;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+    background-color: var(--text-color);
+    color: var(--text-white);
+}
+
+table,th,td {
+   border: 1px solid var(--border-color);
+   border-radius: 4px;
+   text-align: center; 
+   min-height: 20px;
+   padding: 5px;
+   }
+
+tr:hover {
+   background: darkgray;
+}
+
+th{
+   border: var (--border-color);
+   background-color: var(--column-background);
+}
+
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 8 rem;    /* Footer height */
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+li{ 
+    margin: 0px;
+    display: block;
+    text-align: left;
+}
+
+
+
+ol{
+    list-style:lower-roman;
+    list-style-position:outside;
+}
+
+
+
+dl{
+    margin-left: 0px;
+    list-style:disc;
+    list-style-position:upper-latin;
+    color: var(--text-color);
+    
+}
+
+dt{
+    margin-left: 0px;
+    list-style: upper-alpha;
+    color: var(--text-color);
+    text-align:left;
+}
+
+dd{
+    list-style:georgian; 
+    color: var(--text-color);
+    text-align: justify;
+ }
+
+ /* Controls the top portion of text */
+ article {
+     /* color: var(text-white); */
+     float:left;
+     padding:0px;
+     width: 100%;
+     background-color:var(--inner-border-color);
+     height: 1%;
+     top: 0px;
+     left: 0px;
+ }
+
+ /* Clear contents after columns */
+ section::after {
+     content:"";
+     display: table;
+     clear:both;
+ }
+
+ #bio{
+     font-family: 'Lobster', cursive;
+ }
+
+/* #mydog{
+    text-align: center;
+    color: rgba(64, 43, 35, 1);
+    -moz-transform: scale(2) rotate(1deg) translateX(3px) skewX(6deg);
+-webkit-transform: scale(2) rotate(1deg) translateX(3px) skewX(6deg);
+-o-transform: scale(2) rotate(1deg) translateX(3px) skewX(6deg);
+-ms-transform: scale(2) rotate(1deg) translateX(3px) skewX(6deg);
+transform: scale(2) rotate(1deg) translateX(3px) skewX(6deg);
+} */
+
+#footer {
+  padding: 10px;
+  background-color: var(--outer-border-color);
+  text-align: left;
+  position: relative;
+  font-family: 'Orbitron', sans-serif;;
+  bottom: 0px;
+  width: 50%;
+  height: 10rem;            
+  color:var(--text-white);
+
+  
+}
+
+#Persons {
+    display: block;
+    padding: none;
+    margin: none; 
+}
+
+.nowrap {
+    overflow: scroll;
+    white-space: nowrap;
+    color: var(--text-white);
+}
+
+aside{
+    float: left;
+}
+
+figure {
+    float:left;
+}
+
+top {
+    color: var(--text-white);
+    font-family: 'Anton', sans-serif;
+}
+
+.columns {
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    column-count: 3;
+    column-gap: 30px;
+    color: var(--text-white);
+    left:0px;
+    top: 0px;
+    margin: justified; 
+    
+}
+
+
+
